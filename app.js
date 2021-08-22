@@ -29,7 +29,7 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || "An unknown error occured!" });
 });
 
-db.authenticate()
+db.sync()
   .then(() => {
     console.log("Database Connected!!!");
     app.listen(PORT);

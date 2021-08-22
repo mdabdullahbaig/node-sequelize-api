@@ -14,8 +14,4 @@ const Product = db.define("Product", {
   },
 });
 
-(async () => {
-  await Product.sync();
-})();
-
 module.exports = Product;
